@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="720.0" maxWidth="900.0" minHeight="720.0" minWidth="900.0" prefHeight="720.0" prefWidth="900.0" style="-fx-background-color: #282829;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane id="s" layoutX="308.0" layoutY="108.0" prefHeight="522.0" prefWidth="508.0" style="-fx-background-color: #0c0c0c;">
+         <children>
+            <Button layoutX="23.0" layoutY="60.0" mnemonicParsing="false" prefHeight="94.0" prefWidth="459.0" style="-fx-background-color: #19cc6c00; -fx-border-color: #19cc6c;" styleClass="option-button" stylesheets="@../style/style.css" text="Карты" textFill="#19cc6c">
+               <font>
+                  <Font name="Marlett" size="40.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="250.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="459.0" style="-fx-background-color: #19cc6c00; -fx-border-color: #19cc6c;" styleClass="option-button" stylesheets="@../style/style.css" text="Счета" textFill="#19cc6c">
+               <font>
+                  <Font name="Marlett" size="40.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="394.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="459.0" style="-fx-background-color: #19cc6c00; -fx-border-color: #19cc6c;" styleClass="option-button" stylesheets="@../style/style.css" text="Переводы" textFill="#19cc6c">
+               <font>
+                  <Font name="Marlett" size="40.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="86.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#19cc6c" layoutX="693.25390625" layoutY="65.62148437499998" strokeType="OUTSIDE" strokeWidth="0.0" text="Клиенты" textAlignment="RIGHT" AnchorPane.bottomAnchor="8.229687500000026" AnchorPane.rightAnchor="11.3603515625">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Text>
+            <Text fill="#2d2d2d" layoutX="666.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Банковское приложение" textAlignment="RIGHT" wrappingWidth="219.16357421875" AnchorPane.rightAnchor="7.12109375" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="-21.0" prefHeight="755.0" prefWidth="205.0" style="-fx-background-color: #19cc6c; -fx-text-inner-color:: #fff;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="138.0" layoutX="34.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/column-pngrepo-com.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="3.0" layoutX="34.0" layoutY="308.0" stroke="WHITE" strokeType="INSIDE" width="138.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="3.0" layoutX="17.0" layoutY="165.0" stroke="WHITE" strokeType="INSIDE" width="172.0" />
+            <Button fx:id="workersBtn" layoutX="-1.0" layoutY="311.0" mnemonicParsing="false" onAction="#showWorkersMenu" prefHeight="119.0" prefWidth="206.0" style="-fx-background-color: #19cc6c00;" styleClass="menu-button" stylesheets="@../style/style.css" text="Работники" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Marlett" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="bankBtn" layoutX="33.0" layoutY="432.0" mnemonicParsing="false" onAction="#showBankMenu" prefHeight="156.0" prefWidth="172.0" style="-fx-background-color: #19cc6c00;" styleClass="menu-button" stylesheets="@../style/style.css" text="Банк" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Marlett" size="30.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="3.0" layoutX="34.0" layoutY="429.0" stroke="WHITE" strokeType="INSIDE" width="138.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="3.0" layoutX="34.0" layoutY="589.0" stroke="WHITE" strokeType="INSIDE" width="138.0" />
+            <Button fx:id="settingsBtn" layoutX="8.0" layoutY="590.0" mnemonicParsing="false" onAction="#showSettingsMenu" prefHeight="99.0" prefWidth="190.0" style="-fx-background-color: #19cc6c00;" styleClass="menu-button" stylesheets="@../style/style.css" text="Настройки" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Marlett" size="30.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="3.0" layoutX="34.0" layoutY="689.0" stroke="WHITE" strokeType="INSIDE" width="138.0" />
+            <Button fx:id="clientsBtn" layoutX="21.0" layoutY="169.0" mnemonicParsing="false" onAction="#showClientsMenu" prefHeight="138.0" prefWidth="164.0" style="-fx-background-color: #19cc6c00; -fx-text-inner-color: #fff;" styleClass="menu-button" stylesheets="@../style/style.css" text="Клиенты" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Marlett" size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
