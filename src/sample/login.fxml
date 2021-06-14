@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="loginBtn" layoutX="17.0" layoutY="278.0" mnemonicParsing="false" onAction="#login" prefHeight="96.0" prefWidth="569.0" style="-fx-background-color: #ffffff00; -fx-border-color: #ff6621;" text="Вход" textFill="#ff6621">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Button>
+      <Text fill="#ff6621" layoutX="247.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwordField" layoutX="225.0" layoutY="236.0" />
+      <TextField fx:id="login" layoutX="225.0" layoutY="128.0" prefHeight="34.0" prefWidth="149.0" />
+      <Text fill="#ff6621" layoutX="259.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="#ff6621" layoutX="115.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Банковское приложение">
+         <font>
+            <Font name="Arial Black" size="26.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
